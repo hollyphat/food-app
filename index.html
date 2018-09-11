@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:"> -->
+  <title>Food Ordering</title>
+  <link rel="stylesheet" href="css/framework7.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">  
+  <link rel="stylesheet" type="text/css" href="lib/clock/clockpicker.css">    
+
+</head>
+<body class="" id="main-body" onload="is_login()">
+
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="page">
+        <div class="page-content">
+          <div class="menu-head">Menu</div>          
+          <div class="list">
+                    <ul>
+                        <li>
+                          <a href="/resturants/" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">View Resturants</div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/history/" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="fa fa-calendar"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Order History</div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/profile/" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="fa fa-user"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Profile</div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/about/" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="fa fa-briefcase"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">About</div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="" class="item-link item-content panel-close logout">
+                            <div class="item-media"><i class="fa fa-sign-out"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Logout</div>
+                            </div>
+                          </a>
+                        </li>
+                        
+                    </ul>                
+                </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+        
+        <div class="page-content">
+          
+          <div id="splashs" class="block">
+            <div class="center" style="text-align:center; margin-top:45px;">
+              <h3>
+                Mobile Food Ordering Application
+              </h3>
+              <img src="icon.png" alt="" class="img-responsive" width="200"> 
+              
+
+              <h4>
+                <strong>Designed</strong> by 
+                <br>
+                <p>
+                  Olagboye Mofoluwake Dorcas (HC201601567)
+                </p>                
+              </h4>
+
+
+
+
+
+                            
+            </div>
+
+
+            <div class="block">              
+                <div class="row hide un-log">
+                  <a class="button button-outline button-round col" href="/login/">Login</a>                  
+                  <a href="/register/" class="button button-outline button-round col">Register</a>
+                </div>                           
+
+                <div class="row hide logs">
+                  <a href="/home/" class="button button-round col button-outline">Continue</a>
+                </div>
+            </div>
+
+
+            <h4 class="center">
+                <strong>Supervised</strong> by Mrs. Onyenka N.C
+            </h4>
+
+            
+          
+            </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova_plugins.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+
+  <script src="js/framework7.min.js"></script>    
+  
+  <script src="js/settings.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="lib/clock/clockpicker.js"></script>
+
+</body>
+</html>
